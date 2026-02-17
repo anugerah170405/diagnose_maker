@@ -80,7 +80,7 @@ dart --version
 Jalankan aplikasi:
 
 ```bash
-dart run lib/main.dart
+dart run ./main.dart
 ```
 
 ---
