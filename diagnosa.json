@@ -1,0 +1,297 @@
+[
+    {
+        "title": "Diagnosa Penyakit Umum",
+        "tree": {
+            "question": "Apakah kamu mengalami demam?",
+            "decision": null,
+            "nodeYes": {
+                "question": "Apakah suhu tubuh di atas 38°C?",
+                "decision": null,
+                "nodeYes": {
+                    "question": "Apakah disertai nyeri otot dan sakit kepala?",
+                    "decision": null,
+                    "nodeYes": {
+                        "question": null,
+                        "decision": "Kemungkinan besar kamu mengalami Influenza. Disarankan istirahat, minum banyak air, dan konsultasi dokter jika tidak membaik.",
+                        "nodeYes": null,
+                        "nodeNo": null
+                    },
+                    "nodeNo": {
+                        "question": null,
+                        "decision": "Kemungkinan demam biasa akibat kelelahan atau infeksi ringan.",
+                        "nodeYes": null,
+                        "nodeNo": null
+                    }
+                },
+                "nodeNo": {
+                    "question": null,
+                    "decision": "Demam ringan. Observasi 1-2 hari dan perbanyak istirahat.",
+                    "nodeYes": null,
+                    "nodeNo": null
+                }
+            },
+            "nodeNo": {
+                "question": "Apakah kamu mengalami batuk atau pilek?",
+                "decision": null,
+                "nodeYes": {
+                    "question": "Apakah disertai sakit tenggorokan?",
+                    "decision": null,
+                    "nodeYes": {
+                        "question": null,
+                        "decision": "Kemungkinan flu ringan atau infeksi saluran pernapasan atas.",
+                        "nodeYes": null,
+                        "nodeNo": null
+                    },
+                    "nodeNo": {
+                        "question": null,
+                        "decision": "Kemungkinan alergi atau iritasi ringan.",
+                        "nodeYes": null,
+                        "nodeNo": null
+                    }
+                },
+                "nodeNo": {
+                    "question": null,
+                    "decision": "Tidak ditemukan indikasi penyakit umum berdasarkan gejala yang diberikan.",
+                    "nodeYes": null,
+                    "nodeNo": null
+                }
+            }
+        }
+    },
+    {
+        "title": "Flu burung cek",
+        "tree": {
+            "question": "Apakah kamu merasa tidak enak badan?",
+            "decision": null,
+            "nodeYes": {
+                "question": null,
+                "decision": "Kamu sakit flu",
+                "nodeYes": null,
+                "nodeNo": null
+            },
+            "nodeNo": {
+                "question": null,
+                "decision": "Kamu tidak flu",
+                "nodeYes": null,
+                "nodeNo": null
+            }
+        }
+    },
+    {
+        "title": "Diagnosa Gangguan Pencernaan",
+        "tree": {
+            "question": "Apakah kamu mengalami sakit perut?",
+            "decision": null,
+            "nodeYes": {
+                "question": "Apakah disertai diare?",
+                "decision": null,
+                "nodeYes": {
+                    "question": "Apakah diare terjadi lebih dari 3 kali sehari?",
+                    "decision": null,
+                    "nodeYes": {
+                        "question": "Apakah terdapat demam atau muntah?",
+                        "decision": null,
+                        "nodeYes": {
+                            "question": null,
+                            "decision": "Kemungkinan gastroenteritis (infeksi saluran pencernaan). Disarankan minum oralit dan konsultasi dokter jika berlanjut.",
+                            "nodeYes": null,
+                            "nodeNo": null
+                        },
+                        "nodeNo": {
+                            "question": null,
+                            "decision": "Kemungkinan diare akibat makanan tidak higienis. Perbanyak cairan dan istirahat.",
+                            "nodeYes": null,
+                            "nodeNo": null
+                        }
+                    },
+                    "nodeNo": {
+                        "question": null,
+                        "decision": "Diare ringan. Observasi dan jaga pola makan.",
+                        "nodeYes": null,
+                        "nodeNo": null
+                    }
+                },
+                "nodeNo": {
+                    "question": "Apakah terasa perih di bagian ulu hati?",
+                    "decision": null,
+                    "nodeYes": {
+                        "question": "Apakah nyeri muncul setelah makan atau saat telat makan?",
+                        "decision": null,
+                        "nodeYes": {
+                            "question": null,
+                            "decision": "Kemungkinan maag atau gastritis. Hindari makanan pedas dan asam.",
+                            "nodeYes": null,
+                            "nodeNo": null
+                        },
+                        "nodeNo": {
+                            "question": null,
+                            "decision": "Kemungkinan gangguan asam lambung (GERD). Disarankan atur pola makan.",
+                            "nodeYes": null,
+                            "nodeNo": null
+                        }
+                    },
+                    "nodeNo": {
+                        "question": null,
+                        "decision": "Sakit perut ringan akibat kelelahan atau gangguan sementara.",
+                        "nodeYes": null,
+                        "nodeNo": null
+                    }
+                }
+            },
+            "nodeNo": {
+                "question": "Apakah kamu merasa mual atau muntah?",
+                "decision": null,
+                "nodeYes": {
+                    "question": "Apakah disertai pusing atau lemas?",
+                    "decision": null,
+                    "nodeYes": {
+                        "question": null,
+                        "decision": "Kemungkinan keracunan makanan ringan atau masuk angin.",
+                        "nodeYes": null,
+                        "nodeNo": null
+                    },
+                    "nodeNo": {
+                        "question": null,
+                        "decision": "Mual ringan akibat kelelahan atau pola makan tidak teratur.",
+                        "nodeYes": null,
+                        "nodeNo": null
+                    }
+                },
+                "nodeNo": {
+                    "question": null,
+                    "decision": "Tidak ditemukan indikasi gangguan pencernaan berdasarkan jawaban.",
+                    "nodeYes": null,
+                    "nodeNo": null
+                }
+            }
+        }
+    },
+    {
+        "title": "Rekomendasi Karier untuk yang Suka Desain",
+        "tree": {
+            "question": "Apakah kamu lebih suka mendesain secara digital menggunakan komputer?",
+            "decision": null,
+            "nodeYes": {
+                "question": "Apakah kamu tertarik membuat tampilan aplikasi atau website?",
+                "decision": null,
+                "nodeYes": {
+                    "question": "Apakah kamu suka memikirkan pengalaman pengguna (user experience)?",
+                    "decision": null,
+                    "nodeYes": {
+                        "question": null,
+                        "decision": "Kamu cocok menjadi UI/UX Designer. Fokus pada desain tampilan dan kenyamanan pengguna dalam aplikasi atau website.",
+                        "nodeYes": null,
+                        "nodeNo": null
+                    },
+                    "nodeNo": {
+                        "question": null,
+                        "decision": "Kamu cocok menjadi UI Designer atau Web Designer yang fokus pada visual dan estetika tampilan.",
+                        "nodeYes": null,
+                        "nodeNo": null
+                    }
+                },
+                "nodeNo": {
+                    "question": "Apakah kamu suka membuat ilustrasi atau gambar digital?",
+                    "decision": null,
+                    "nodeYes": {
+                        "question": null,
+                        "decision": "Kamu cocok menjadi Digital Illustrator atau Concept Artist.",
+                        "nodeYes": null,
+                        "nodeNo": null
+                    },
+                    "nodeNo": {
+                        "question": null,
+                        "decision": "Kamu cocok menjadi Graphic Designer yang fokus pada branding dan media promosi.",
+                        "nodeYes": null,
+                        "nodeNo": null
+                    }
+                }
+            },
+            "nodeNo": {
+                "question": "Apakah kamu lebih suka mendesain produk fisik atau ruangan?",
+                "decision": null,
+                "nodeYes": {
+                    "question": "Apakah kamu tertarik pada desain interior ruangan?",
+                    "decision": null,
+                    "nodeYes": {
+                        "question": null,
+                        "decision": "Kamu cocok menjadi Interior Designer.",
+                        "nodeYes": null,
+                        "nodeNo": null
+                    },
+                    "nodeNo": {
+                        "question": null,
+                        "decision": "Kamu cocok menjadi Product Designer atau Industrial Designer.",
+                        "nodeYes": null,
+                        "nodeNo": null
+                    }
+                },
+                "nodeNo": {
+                    "question": null,
+                    "decision": "Kamu mungkin cocok mengeksplorasi bidang desain lainnya seperti fashion design atau seni murni.",
+                    "nodeYes": null,
+                    "nodeNo": null
+                }
+            }
+        }
+    },
+    {
+        "title": "Diagnosa Mood dan Rekomendasi Lagu",
+        "tree": {
+            "question": "Apakah kamu sedang merasa sedih?",
+            "decision": null,
+            "nodeYes": {
+                "question": "Apakah kamu ingin meluapkan perasaan dengan lagu mellow?",
+                "decision": null,
+                "nodeYes": {
+                    "question": null,
+                    "decision": "Rekomendasi lagu: Fix You - Coldplay, Hati-Hati di Jalan - Tulus, Someone Like You - Adele.",
+                    "nodeYes": null,
+                    "nodeNo": null
+                },
+                "nodeNo": {
+                    "question": null,
+                    "decision": "Rekomendasi lagu: Stronger - Kelly Clarkson, Unstoppable - Sia, Jangan Menyerah - D'Masiv.",
+                    "nodeYes": null,
+                    "nodeNo": null
+                }
+            },
+            "nodeNo": {
+                "question": "Apakah kamu sedang merasa bersemangat?",
+                "decision": null,
+                "nodeYes": {
+                    "question": "Apakah kamu ingin lagu yang energik untuk menambah semangat?",
+                    "decision": null,
+                    "nodeYes": {
+                        "question": null,
+                        "decision": "Rekomendasi lagu: Can't Hold Us - Macklemore & Ryan Lewis, Believer - Imagine Dragons, On Top of the World - Imagine Dragons.",
+                        "nodeYes": null,
+                        "nodeNo": null
+                    },
+                    "nodeNo": {
+                        "question": null,
+                        "decision": "Rekomendasi lagu: Counting Stars - OneRepublic, Viva La Vida - Coldplay.",
+                        "nodeYes": null,
+                        "nodeNo": null
+                    }
+                },
+                "nodeNo": {
+                    "question": "Apakah kamu sedang merasa santai atau ingin relaks?",
+                    "decision": null,
+                    "nodeYes": {
+                        "question": null,
+                        "decision": "Rekomendasi lagu: Perfect - Ed Sheeran, Yellow - Coldplay, Akad - Payung Teduh.",
+                        "nodeYes": null,
+                        "nodeNo": null
+                    },
+                    "nodeNo": {
+                        "question": null,
+                        "decision": "Rekomendasi lagu: Blinding Lights - The Weeknd, As It Was - Harry Styles, Anti-Hero - Taylor Swift.",
+                        "nodeYes": null,
+                        "nodeNo": null
+                    }
+                }
+            }
+        }
+    }
+]
