@@ -1,79 +1,87 @@
 # 🩺 Diagnosa Maker
 
-**Diagnosa Maker** adalah aplikasi berbasis terminal (CLI) yang dikembangkan menggunakan **Dart** sebagai bagian dari tugas kelompok mata kuliah *Object-Oriented Programming (OOP)*.
+**Diagnosa Maker** adalah aplikasi berbasis Command Line Interface (CLI) yang dikembangkan menggunakan **Dart**, sebagai implementasi konsep *Object-Oriented Programming (OOP)* dalam tugas kelompok mata kuliah OOP.
 
-Aplikasi ini dirancang untuk mensimulasikan sistem diagnosa sederhana berdasarkan input gejala dari pengguna, dengan pendekatan berbasis konsep OOP seperti class, object, encapsulation, dan modularisasi.
-
----
-
-## 📌 Latar Belakang
-
-Proyek ini dibuat untuk:
-
-* Mengimplementasikan konsep **Object-Oriented Programming**
-* Mempraktikkan penggunaan **Dart sebagai bahasa pemrograman**
-* Mengembangkan logika sistem berbasis kondisi (decision-based system)
-* Melatih kerja sama tim dalam pengembangan software
+Aplikasi ini menggunakan pendekatan **Decision Tree** untuk menentukan hasil diagnosa berdasarkan input gejala dari pengguna.
 
 ---
 
-## ⚙️ Teknologi yang Digunakan
+## 🎯 Tujuan Proyek
 
-* **Bahasa:** Dart
-* **Platform:** Terminal / Command Line Interface (CLI)
-* **Paradigma:** Object-Oriented Programming (OOP)
+* Mengimplementasikan konsep OOP dalam studi kasus nyata
+* Membangun sistem berbasis decision logic
+* Menerapkan struktur project modular dan terorganisir
+* Melatih kolaborasi tim dalam pengembangan perangkat lunak
 
 ---
 
-## 🚀 Fitur Utama
+## ⚙️ Teknologi
 
-* Input gejala melalui terminal
-* Sistem evaluasi berdasarkan kondisi tertentu
-* Output hasil diagnosa
-* Struktur program berbasis class dan object
-* Modular code (pemisahan logic & data)
+* **Language:** Dart
+* **Environment:** Terminal / CLI
+* **Paradigm:** Object-Oriented Programming
+* **Architecture Style:** Layered structure (Model–Controller–Utility)
 
 ---
 
 ## 🧠 Konsep OOP yang Diimplementasikan
 
-* **Class & Object**
-* **Encapsulation**
-* **Constructor**
-* **Method**
-* **Conditional Logic**
-* (Tambahkan jika ada: inheritance / polymorphism)
+* Class & Object
+* Encapsulation
+* Constructor
+* Method abstraction
+* Separation of Concerns
+* Decision Tree Logic Pattern
 
 ---
 
-## 📂 Struktur Program (Contoh)
+## 📂 Struktur Project
 
 ```
 lib/
 │
-├── main.dart
-├── diagnosa.dart
-├── pasien.dart
-└── utils.dart
+├── colors_util.dart        # Utility untuk styling warna terminal
+├── message_util.dart       # Utility untuk formatting pesan
+├── table_util.dart         # Utility untuk menampilkan tabel CLI
+│
+├── model/
+│   └── diagnoseData.dart   # Model data untuk diagnosa
+│
+├── controller.dart         # Logic utama pengontrol alur program
+├── decisionTree.dart       # Implementasi decision tree
+│
+├── main.dart               # Entry point aplikasi
+│
+├── diagnosa.json           # Data referensi diagnosa
+│
+└── README.md
 ```
-
-*(Sesuaikan dengan struktur project kalian)*
 
 ---
 
-## ▶️ Cara Menjalankan Program
+## 🔄 Alur Kerja Program
 
-1. Pastikan Dart sudah terinstall
+1. Program dijalankan melalui `main.dart`
+2. `controller.dart` mengatur alur interaksi user
+3. `decisionTree.dart` memproses input berdasarkan struktur pohon keputusan
+4. Data diagnosa diambil dari `diagnosa.json`
+5. Output ditampilkan menggunakan utility (warna, tabel, pesan)
 
-   ```bash
-   dart --version
-   ```
+---
 
-2. Jalankan program:
+## ▶️ Cara Menjalankan
 
-   ```bash
-   dart run main.dart
-   ```
+Pastikan Dart sudah terinstall:
+
+```bash
+dart --version
+```
+
+Jalankan aplikasi:
+
+```bash
+dart run lib/main.dart
+```
 
 ---
 
@@ -81,35 +89,13 @@ lib/
 
 **Kelompok 2**
 
-1. **Londok Stieven**
-2. **Gari Anugrah**
-3. **Mamahit Sthaford**
-
----
-
-## 🎯 Tujuan Pembelajaran
-
-Melalui proyek ini, kami belajar:
-
-* Mendesain sistem berbasis OOP
-* Mengelola alur logika program
-* Mengimplementasikan kolaborasi tim dalam coding
-* Mengorganisir struktur project yang lebih maintainable
+* Londok Stieven
+* Gari Anugrah
+* Mamahit Sthaford
 
 ---
 
 ## 📌 Catatan
 
-Program ini dibuat untuk tujuan pembelajaran dan simulasi.
-Tidak digunakan untuk diagnosa medis nyata.
-
----
-
-Kalau kamu mau, saya bisa bantu:
-
-* Versi README yang lebih "portfolio-ready" (lebih profesional dan impactful)
-* Versi dengan badge (Dart version, license, status)
-* Versi bahasa Inggris untuk GitHub global
-* Tambahkan screenshot mock terminal agar lebih menarik
-
-Tinggal bilang mau fokus ke academic project atau portfolio professional 🚀
+Program ini dibuat untuk keperluan pembelajaran dan simulasi akademik.
+Tidak dimaksudkan untuk penggunaan medis nyata.
