@@ -82,9 +82,9 @@ class DecisionTree {
     stdout.write(color('$question: ', Color.blue));
     String ask = (stdin.readLineSync() ?? '').toLowerCase();
     if (ask == 'yes')
-      return nodeYes!.diagnose();
+      return nodeYes?.diagnose();
     else if (ask == 'no')
-      return nodeNo!.diagnose();
+      return nodeNo?.diagnose();
     else {
       message("Jawaban tidak valid, silakan pilih 'yes/no'", MessageType.error);
       return diagnose();
